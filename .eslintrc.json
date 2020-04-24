@@ -17,5 +17,7 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "max-len": "off"
+  }
 }
