@@ -18,6 +18,9 @@
   },
   "plugins": ["react"],
   "rules": {
-    "max-len": "off"
+    "max-len": "off",
+    "no-underscore-dangle": "off",
+    "no-plusplus": "off",
+    "no-param-reassign": "off"
   }
 }
