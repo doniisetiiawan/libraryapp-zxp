@@ -8,14 +8,8 @@ class BookList extends Component {
     super(props);
 
     this.state = {
-      items: [],
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
       items: AppStore.getLibrary(),
-    });
+    };
   }
 
   render() {

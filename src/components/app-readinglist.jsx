@@ -15,8 +15,7 @@ class ReadingList extends Component {
     };
   }
 
-  // eslint-disable-next-line camelcase
-  UNSAFE_componentWillMount() {
+  componentDidMount = () => {
     AppStore.addChangeListener(this._onChange);
   }
 
