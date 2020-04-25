@@ -21,6 +21,8 @@
     "max-len": "off",
     "no-underscore-dangle": "off",
     "no-plusplus": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off"
   }
 }
