@@ -20,9 +20,9 @@ class ReadingList extends Component {
     AppStore.addChangeListener(this._onChange);
   }
 
-  _onChange() {
+  _onChange = () => {
     this.setState(readingItems());
-  }
+  };
 
   render() {
     return (
@@ -38,10 +38,10 @@ class ReadingList extends Component {
           </tr>
         </thead>
         <tbody>
-          {this.state.items.map((item) => (
-            <tr key={item.id}>
+          {this.state.items.map((item, i) => (
+            <tr key={i}>
               <td>
-                <RemoveFromReadingList index={item.id} />
+                <RemoveFromReadingList index={i} />
               </td>
               <td>{item.title}</td>
               <td>{item.qty}</td>

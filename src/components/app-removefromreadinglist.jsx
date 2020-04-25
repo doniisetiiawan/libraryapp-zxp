@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import AppActions from '../actions/app-actions';
 
 class DeleteBookFromReadingList extends Component {
-  handler() {
+  handler = () => {
     AppActions.deleteBook(this.props.index);
-  }
+  };
 
   render() {
     return (

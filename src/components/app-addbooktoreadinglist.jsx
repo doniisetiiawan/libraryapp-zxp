@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import AppActions from '../actions/app-actions';
 
 class AddBookToReadingList extends Component {
-  handler() {
+  handler = () => {
     AppActions.addBook(this.props.item);
-  }
+  };
 
   render() {
     return (
